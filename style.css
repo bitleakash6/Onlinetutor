@@ -1,0 +1,155 @@
+/* CSS RESET */
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid #dadada;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav h2 {
+    padding: 0 1vw;
+    margin: 0 2vw;
+    font-size: 2vw;
+    color: #FF8578;
+}
+
+.nav button{
+    margin: 0 1vw;
+    font-size: 1.2vw;
+    padding: 0.5vw 1vw;
+    background-color: #FF8578;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.item {
+    display: flex;
+    gap: 800;
+}
+
+.item li {
+    list-style-type: none;
+    margin: 0.5vw 2vw;
+}
+
+.item li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav i {
+    margin: 0 1vw;
+    font-weight: 800;
+    font-size: 1.4vw;
+    display: none;
+}
+
+
+.content{
+    height: 748px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    margin: 0 5vw;
+    font-size: 2rem;
+}
+.left h1{
+    padding: 5vw 0 0 0vw;
+}
+.left h1 span{
+    color: #FF8578;
+}
+.left p{
+    color: #666;
+}
+.right{
+    height: 100%;
+    width: 50%;
+}
+.right img{
+    height: 99%;
+    width: 100%;
+}
+
+button{
+    font-size: 1.2vw;
+    padding: 0.6vw 1.2vw;
+    background-color:#FF8578;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .nav {
+        height: 60px;
+    }
+
+    .nav h2 {
+        font-size: 5vw;
+    }
+
+    .item li a {
+        text-decoration: none;
+        font-size: 3vw;
+        color: #000;
+        font-weight: bold;
+        display: none;
+    }
+
+    .nav i {
+        margin: 0 3vw;
+        font-weight: bold;
+        font-size: 4vw;
+        display: block;
+    }
+    .nav button{
+        display: none;
+    }
+    .content{
+        height: 748px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 94%;
+        font-size: 1.3rem;
+        margin: 0vw 2vw;
+        padding: 2vw 2vw;
+    }
+    button{
+        font-size: 1.1rem;
+        padding: 2vw 2vw;
+    }
+    .right{
+        width: 100%;
+    }
+    .right img{
+        margin-top: 2vw;
+    }
+}
